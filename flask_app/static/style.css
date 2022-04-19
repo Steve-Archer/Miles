@@ -1,0 +1,64 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Sigmar One', cursive;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+.body_box {
+    background-image: linear-gradient(to bottom left, rgb(0, 255, 255, 0.2), rgb(255, 255, 0, 0.2));
+    height: 1000px;
+}
+
+.game_box {
+    height: 450px;
+    margin-top: 40px;
+    box-shadow: 1px 3px 35px 1px rgb(0, 0, 0, .9), 2px 6px 50px 2px rgb(0, 0, 0, .95);
+    border-radius: 5%;
+}
+
+.clock_box {
+    box-shadow: 1px 3px 35px 1px rgb(0, 0, 0, .9), 2px 6px 50px 2px rgb(0, 0, 0, .95);
+    border-radius: 5%;
+    background-color: white;
+    margin-bottom: 40px;
+}
+.clock_box * {
+    font-weight: 900;
+}
+
+.header {
+    padding-top: 30px;
+    font-size: 70px;
+    font-weight: 900;
+}
+
+.logout {
+    padding-top: 40px;
+}
+
+#input {
+    font-size: 24px;
+    color: rgb(255,255,0);
+    width: 80px;
+    background-color: black;
+}
+
+.next_round {
+    background-color: rgb(200,200,200,0.3);
+    margin-top: 40px;
+}
+
+.table {
+    border: 2px solid;
+}
+
+.index_box {
+    box-shadow: 1px 3px 35px 1px rgb(0, 0, 0, .9), 2px 6px 50px 2px rgb(0, 0, 0, .95);
+    border-radius: 5%;
+    width: 250px;
+}
+
+.rules {
+    padding: 40px;
+    margin: 60px, 0px;
+}
