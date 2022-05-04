@@ -1,0 +1,27 @@
+--Display login -- 
+    collect name (Not really needed but if game is implemented to multiplayer it will be along with session ids)
+    will need to include validation for checking for name already existing in users_db
+--Game Page --
+    OBJECT OF GAME = guess how many miles between two cities. the difference between the guess and the api fetch http://geodb-cities-api.wirefreethought.com/docs/guides/getting-distance-between-cities will calculate your score
+        Low Score Gaming - Lowest score as possible
+
+on page load--
+    user is shown a start button. when clicked - user is shown two cities(and state abbrev) on opposite sides of the browser. 
+        on page load python will query mysql for two cities at random. along with api url for js fetchs  *** fetch urls will be displayed on browser as well but hidden, so js can collect data directly from the page for fetch ***
+    
+    when start button is clicked it will start javascript to fetch the distance between the two cities. and will display it on the page hidden below the input field
+        the input field will be between the two cities - a textbox with a submit button
+        
+    There will be a timer running through javascript displaying on the page above the input field - probably 15 seconds or so
+        when either the timer expires or the submit button is clicked:
+            javascript will collect the field data and compare it to the fetch data
+            the fetch data distance which was displayed but hidden will then be displayed below the input field
+            a div will appear with a line telling user what the calculated difference is. there will be a form and submit button to go to the next round - the form will have a hidden input that js will fill with the difference
+            that form submit will reload the page with the session['round_number'] incrementing, and the session['score'] updating to the calculated difference submitted in the form
+    
+    After x number of rounds are played: 
+        session['name'] + ['score'] are inserted into users_db
+        end of game page will load with users score above the overall lowest scores saved in users db.
+
+
+
